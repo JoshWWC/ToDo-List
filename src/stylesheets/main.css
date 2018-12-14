@@ -1,0 +1,28 @@
+body {
+  background-color: #04A1BF; /*  a light blue */
+  font-family: 'Open Sans', sans-serif;
+}
+
+.center {
+  text-align: center;
+}
+
+#intro {
+  color: white;
+  font-size: 50px;
+}
+
+#instruct1 {
+  color: #FECC5C; /* a nice yellow */
+  font-size: 20px;
+}
+
+#instruct2 {
+  color: #51DF70; /* a nice green */
+  font-size: 20px;
+}
+
+#instruct3 {
+  color: #055E70; /* a nice grey */
+  font-size: 20px;
+}
