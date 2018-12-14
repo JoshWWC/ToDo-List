@@ -5,36 +5,52 @@ body {
 
 .center {
   text-align: center;
+  margin-bottom: 80px;
 }
 
 #intro {
   color: white;
   font-size: 50px;
+  margin-bottom: 40px;
 }
 
 #instruct1 {
   color: #FECC5C; /* a nice yellow */
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 #instruct2 {
   color: #51DF70; /* a nice green */
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
 #instruct3 {
   color: #055E70; /* a nice grey */
   font-size: 20px;
+  margin-bottom: 40px;
 }
 
-input {
+input[type=text], textarea {
   width: 80%;
+  height: 64px;
+  box-shadow: 0 0 5px rgba(142, 183, 249, 1);
+  border: 1px solid rgba(142, 183, 249, 1);
+  border-radius: 10px;
+
+  font-size: 20px;
 }
 
 input[type=submit] {
     background: url(../images/button.png);
     border: 0;
+    margin-left: 10px;
     display: inline-block;
     height: 64;
     width: 87;
+}
+
+input::placeholder {
+  font-size: 20px;
 }
