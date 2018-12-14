@@ -1,2 +1,2 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
+import './stylesheets/main.css';
+import './js/todo-list.js';

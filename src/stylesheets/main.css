@@ -26,3 +26,15 @@ body {
   color: #055E70; /* a nice grey */
   font-size: 20px;
 }
+
+input {
+  width: 80%;
+}
+
+input[type=submit] {
+    background: url(../images/button.png);
+    border: 0;
+    display: inline-block;
+    height: 64;
+    width: 87;
+}
