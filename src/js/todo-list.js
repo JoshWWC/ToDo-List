@@ -21,7 +21,7 @@ class ToDoList extends React.Component {
 
   createPanel() {
     const item = this.state.itemArray;
-     item.push(
+     item.unshift(
         <span className="panel">{this.state.value}</span>
      )
      this.setState({itemArray: item})
@@ -47,7 +47,10 @@ class ToDoList extends React.Component {
 
         <div>
         {this.state.itemArray.map((item, index) => {
-           return <div className="colorPanels" key={index}>{item} <button className="delete" onClick={this.delete.bind(this, item)}>X</button> </div>
+           return <div className="colorPanels" key={index}>
+           {item}
+           <button className="delete" onClick={this.delete.bind(this, item)}>X</button>
+           </div>
          })}
         </div>
       </div>
