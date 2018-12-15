@@ -22,9 +22,17 @@ class ToDoList extends React.Component {
   createPanel() {
     const item = this.state.itemArray;
      item.push(
-        <p class="panel">{this.state.value}</p>
+        <span className="panel">{this.state.value}</span>
      )
      this.setState({itemArray: item})
+  }
+
+  delete(item){
+    const newState = this.state.itemArray.slice();
+    if (newState.indexOf(item) > -1) {
+      newState.splice(newState.indexOf(item), 1);
+      this.setState({itemArray: newState})
+    }
   }
 
   render() {
@@ -37,9 +45,9 @@ class ToDoList extends React.Component {
           <input type="submit" value="" />
         </form>
 
-        <div id="panelDiv">
+        <div>
         {this.state.itemArray.map((item, index) => {
-           return <div className="colorPanels" key={index}>{item}</div>
+           return <div className="colorPanels" key={index}>{item} <button className="delete" onClick={this.delete.bind(this, item)}>X</button> </div>
          })}
         </div>
       </div>

@@ -56,6 +56,17 @@ input::placeholder {
   font-size: 26px;
 }
 
+.colorPanels {
+  background-color: #4CB9CD;
+  border: 3px solid rgba(5, 94, 112, 1);
+  border-radius: 10px;
+
+  margin-left: 10%;
+  width: 77%;
+  height: 72px;
+  margin-bottom: 20px;
+}
+
 .panel {
   text-align: left;
   padding-left: 20px;
@@ -63,14 +74,13 @@ input::placeholder {
   font-size: 24px;
 }
 
-.colorPanels {
+.delete {
   background-color: #4CB9CD;
-  border: 3px solid rgba(5, 94, 112, 1);
-  border-radius: 10px;
-
-  position: relative;
-  left: 10%;
-  width: 77%;
-  height: 72px;
-  margin-bottom: 20px;
+  border: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: #055E70;
+  float: right;
+  margin-right: 30px;
+  margin-top: 17px;
 }
