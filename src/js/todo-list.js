@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 class ToDoList extends React.Component {
   constructor(props) {
@@ -46,13 +47,20 @@ class ToDoList extends React.Component {
         </form>
 
         <div>
+        <ReactCSSTransitionGroup
+          transitionName="fade"
+          transitionEnterTimeout={500}
+          transitionLeaveTimeout={300}>
         {this.state.itemArray.map((item, index) => {
            return <div className="colorPanels" key={index}>
+           <input className="check" type="checkbox" />
            {item}
            <button className="delete" onClick={this.delete.bind(this, item)}>X</button>
            </div>
          })}
+         </ReactCSSTransitionGroup>
         </div>
+
       </div>
     );
   }

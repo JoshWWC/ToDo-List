@@ -50,6 +50,7 @@ input[type=submit] {
     display: inline-block;
     height: 64;
     width: 87;
+    padding-top: 12px;
 }
 
 input::placeholder {
@@ -84,4 +85,32 @@ input::placeholder {
   float: right;
   margin-right: 30px;
   margin-top: 17px;
+}
+
+.check {
+  float: left;
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  margin-top: 29px;
+  margin-left: 25px;
+}
+
+.fade-enter {
+  opacity: 0.01;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.fade-leave {
+  opacity: 1;
+}
+
+.fade-leave.fade-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }
