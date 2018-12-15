@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Panel from './panel.js'
 
 class ToDoList extends React.Component {
   constructor(props) {
@@ -23,9 +22,7 @@ class ToDoList extends React.Component {
   createPanel() {
     const item = this.state.itemArray;
      item.push(
-       <div>
-         <p>{this.state.value}</p>
-       </div>
+        <p class="panel">{this.state.value}</p>
      )
      this.setState({itemArray: item})
   }
@@ -33,17 +30,19 @@ class ToDoList extends React.Component {
   render() {
     return (
       <div>
-      <form onSubmit={this.handleSubmit}>
-        <label>
-          <input type="text" placeholder="New item..." value={this.state.value} onChange={this.handleChange} />
-        </label>
-        <input type="submit" value="" />
-      </form>
+        <form onSubmit={this.handleSubmit}>
+          <label>
+            <input type="text" placeholder="New item..." value={this.state.value} onChange={this.handleChange} />
+          </label>
+          <input type="submit" value="" />
+        </form>
 
-      {this.state.itemArray.map((item, index) => {
-         return <div key={index}>{item}</div>
-       })}
-       </div>
+        <div id="panelDiv">
+        {this.state.itemArray.map((item, index) => {
+           return <div className="colorPanels" key={index}>{item}</div>
+         })}
+        </div>
+      </div>
     );
   }
 }

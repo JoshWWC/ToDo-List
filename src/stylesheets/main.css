@@ -16,30 +16,31 @@ body {
 
 #instruct1 {
   color: #FECC5C; /* a nice yellow */
-  font-size: 20px;
+  font-size: 26px;
   margin-bottom: 40px;
 }
 
 #instruct2 {
   color: #51DF70; /* a nice green */
-  font-size: 20px;
+  font-size: 26px;
   margin-bottom: 40px;
 }
 
 #instruct3 {
   color: #055E70; /* a nice grey */
-  font-size: 20px;
+  font-size: 26px;
   margin-bottom: 40px;
 }
 
 input[type=text], textarea {
   width: 80%;
   height: 64px;
+  padding-left: 20px;
   box-shadow: 0 0 5px rgba(142, 183, 249, 1);
   border: 1px solid rgba(142, 183, 249, 1);
   border-radius: 10px;
 
-  font-size: 20px;
+  font-size: 26px;
 }
 
 input[type=submit] {
@@ -52,5 +53,24 @@ input[type=submit] {
 }
 
 input::placeholder {
-  font-size: 20px;
+  font-size: 26px;
+}
+
+.panel {
+  text-align: left;
+  padding-left: 20px;
+  color: white;
+  font-size: 24px;
+}
+
+.colorPanels {
+  background-color: #4CB9CD;
+  border: 3px solid rgba(5, 94, 112, 1);
+  border-radius: 10px;
+
+  position: relative;
+  left: 10%;
+  width: 77%;
+  height: 72px;
+  margin-bottom: 20px;
 }
